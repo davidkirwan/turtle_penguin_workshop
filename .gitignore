@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+
+# Workshop
+turtle_v_pengin_model.keras
+
+
 __pycache__/
 *.py[cod]
 *$py.class
