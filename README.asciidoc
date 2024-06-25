@@ -4,13 +4,11 @@ Original author:
 https://www.kaggle.com/code/sc0v1n0/example-image-classification-turtle-vs-peguim
 
 
-
-
 David Kirwan
 Lenka Segura
 
 Run with the following:
 
 ----
-podman run -it -p 8888:8888 -v ./:/opt/app-root/src/turtle_and_penguin:Z quay.io/opendatahub/workbench-images:jupyter-minimal-ubi9-python-3.9-2024a-20240317-6f4c36b
+podman run --rm --user 1000 --userns=keep-id -it -p 8888:8888 -v ./:/opt/app-root/src/turtle_and_penguin:Z,U quay.io/opendatahub/workbench-images:jupyter-minimal-ubi9-python-3.9-2024a-20240317-6f4c36b
 ----
